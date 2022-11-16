@@ -22,6 +22,11 @@ export default function App() {
 
   const handleSearchbarSubmit = query => {
     setSearchQuery(query);
+    setPage(1);
+    setResults([]);
+    setLoading(false);
+    setModalImage(null);
+    setTheEnd(false);
   };
 
   const openModal = imageUrl => {
