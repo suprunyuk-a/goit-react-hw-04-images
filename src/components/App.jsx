@@ -50,13 +50,6 @@ export default function App() {
       setTheEnd(false);
       prevPageRef.current = 0;
       prevSearchQueryRef.current = searchQuery;
-      if (page !== 1) {
-        setPage(1); //trigger useEffect!
-        return;
-      }
-    }
-    if (prevPageRef.current === page) {
-      return;
     }
     prevPageRef.current = page;
     setLoading(true);
